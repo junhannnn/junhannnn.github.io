@@ -1,1 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Pages Examples</title>
+    <style>
+      :root {
+        --bg: #f7f4ec;
+        --ink: #1d1d1d;
+        --accent: #0b5dff;
+        --card: #ffffff;
+      }
 
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Avenir Next", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: radial-gradient(circle at top right, #d9ecff, transparent 30%), var(--bg);
+      }
+
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 56px 20px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 5vw, 3.2rem);
+      }
+
+      p { margin: 0 0 24px; font-size: 1.05rem; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+
+      a.card {
+        text-decoration: none;
+        color: inherit;
+        background: var(--card);
+        border: 1px solid #e5e1d7;
+        border-radius: 16px;
+        padding: 18px;
+        transition: transform .2s ease, box-shadow .2s ease;
+      }
+
+      a.card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      }
+
+      .tag {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: .85rem;
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>GitHub.io Example Websites</h1>
+      <p>Use these starter pages as templates for your repo.</p>
+      <section class="grid">
+        <a class="card" href="examples/portfolio/">
+          <h2>Portfolio Landing</h2>
+          <p>Personal intro + project cards.</p>
+          <span class="tag">examples/portfolio</span>
+        </a>
+        <a class="card" href="examples/product/">
+          <h2>Product Teaser</h2>
+          <p>Hero section with feature highlights.</p>
+          <span class="tag">examples/product</span>
+        </a>
+        <a class="card" href="examples/blog/">
+          <h2>Simple Blog</h2>
+          <p>Magazine-style article layout.</p>
+          <span class="tag">examples/blog</span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
