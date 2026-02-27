@@ -393,6 +393,35 @@ main {
   font-weight: 600;
 }
 
+.contact-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(145deg, #ffffff 0%, #f6f9ff 100%);
+  padding: 18px;
+}
+
+.contact-content {
+  position: relative;
+}
+
+.contact-me-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.contact-me-list li {
+  line-height: 1.55;
+}
+
+.contact-me-label {
+  color: var(--text-1);
+  font-weight: 600;
+  margin-right: 6px;
+}
+
 .about-text a {
   color: var(--accent);
 }
