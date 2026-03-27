@@ -321,6 +321,10 @@ main {
   margin-bottom: 14px;
 }
 
+.home .about-text p {
+  text-align: justify;
+}
+
 .working-paper-details {
   margin-left: 32px;
 }
